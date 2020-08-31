@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from 'prop-types';
 
 
 const ProductTable = (props) => {
@@ -12,6 +12,10 @@ return(<React.Fragment>
     </tr>)
   })}
 </React.Fragment>)
+}
+
+ProductTable.PropTypes = {
+    prod : PropTypes.array
 }
 
 export default ProductTable;
